@@ -9,8 +9,149 @@
     tools:context=".RollSelect$PlaceholderFragment">
 
     <TextView
-        android:text="@string/hello_world"
+        android:text="@string/select_dice"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:id="@+id/dieSelectLabel"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/de4"
+        android:id="@+id/d4_Label"
+        android:layout_below="@+id/dieSelectLabel"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/de6"
+        android:id="@+id/d6_Label"
+        android:layout_below="@+id/d4_Label"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="40dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/de8"
+        android:id="@+id/d8_Label"
+        android:layout_below="@+id/d6_Label"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="40dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/de10"
+        android:id="@+id/d10_Label"
+        android:layout_below="@+id/d8_Label"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="40dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/de12"
+        android:id="@+id/d12_Label"
+        android:layout_below="@+id/d10_Label"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="40dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/de20"
+        android:id="@+id/d20_Label"
+        android:layout_below="@+id/d12_Label"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="40dp"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/d4_Number"
+        android:layout_alignTop="@+id/d4_Label"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="65dp"
+        android:layout_marginEnd="65dp"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/d6_Number"
+        android:layout_alignTop="@+id/d6_Label"
+        android:layout_toRightOf="@+id/dieSelectLabel"
+        android:layout_toEndOf="@+id/dieSelectLabel"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/d8_Number"
+        android:layout_alignTop="@+id/d8_Label"
+        android:layout_alignLeft="@+id/d4_Number"
+        android:layout_alignStart="@+id/d4_Number"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/d10_Number"
+        android:layout_alignTop="@+id/d10_Label"
+        android:layout_toRightOf="@+id/dieSelectLabel"
+        android:layout_toEndOf="@+id/dieSelectLabel"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/d12_Number"
+        android:layout_alignTop="@+id/d12_Label"
+        android:layout_toRightOf="@+id/dieSelectLabel"
+        android:layout_toEndOf="@+id/dieSelectLabel"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/d20_Number"
+        android:layout_alignTop="@+id/d20_Label"
+        android:layout_toRightOf="@+id/dieSelectLabel"
+        android:layout_toEndOf="@+id/dieSelectLabel"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/roll_action"
+        android:id="@+id/roll_Button"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/d8_Number"
+        android:layout_alignStart="@+id/d8_Number"
+        android:layout_marginBottom="31dp"
+        android:layout_alignRight="@+id/d20_Number"
+        android:layout_alignEnd="@+id/d20_Number"/>
 
 </RelativeLayout>
