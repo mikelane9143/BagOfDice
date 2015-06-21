@@ -1,4 +1,4 @@
-package com.mikelane9143.gmstools.bagofdice;
+package com.mikelane9143.gmstools.bagofdice.DiceMan;
 
 import java.util.Iterator;
 import java.util.Random;
